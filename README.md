@@ -35,9 +35,15 @@ simply use the actions of the `PaymentStatusScreen.js`.
 
 
 ```javascript 
+import MollieSandbox from "cypress-mollie/src/actions/MollieSandbox";
+import CreditCardScreenAction from "cypress-mollie/src/actions/screens/CreditCardScreen";
+import PaymentScreenAction from "cypress-mollie/src/actions/screens/PaymentStatusScreen";
+
+
 const mollieSandbox = new MollieSandbox();
 const mollieCreditCardForm = new CreditCardScreen();
 const molliePayment = new PaymentStatusScreen();
+
 
 it('Checkout with Credit Card', () => {
 
