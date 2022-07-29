@@ -1,0 +1,20 @@
+{
+    "name": "cypress-mollie",
+    "version": "1.0.0",
+    "description": "Prepared Mollie Actions for Cypress",
+    "main": "index.js",
+    "private": false,
+    "keywords": [
+        "mollie",
+        "cypress",
+        "payment"
+    ],
+    "author": {
+        "name": "Christian Dangl"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/boxblinkracer/cypress-mollie.git"
+    }
+}
