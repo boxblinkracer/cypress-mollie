@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="200px" src="/assets/cypress.jpg">
+   <img width="200px" src="/assets/header.png">
 </p>
 <h1 align="center">Mollie Actions for Cypress</h1>
 
