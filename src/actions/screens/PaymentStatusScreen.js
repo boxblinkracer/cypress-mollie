@@ -1,6 +1,14 @@
 export default class PaymentStatusScreen {
 
-
+    /**
+     * Gets the total amount that will be
+     * paid with Mollie.
+     * @returns {*}
+     */
+    getAmount() {
+        return cy.get('.header__amount');
+    }
+    
     /**
      *
      */
