@@ -63,7 +63,7 @@ it('Checkout with Credit Card', () => {
     
     // now we are on the status page
     // just select something like paid
-    mollieStatus.paid();
+    mollieStatus.selectPaid();
 })
 ```
 
