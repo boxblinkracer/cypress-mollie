@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0]
+
+### Added
+
+- Added new screens for iDEAL and KBC/CBC
+- Added new getAmount() function in PaymentStatus screen.
+- Added more payment selection actions to PaymentList screen.
+
+### Changed
+
+- Removed IssuerScreen and created separate iDEAL and KBC/CBC screen.
+- Moved selectGiropay() from PaymentStatusScreen to PaymentListScreen.
 
 ## [1.0.0]
 
