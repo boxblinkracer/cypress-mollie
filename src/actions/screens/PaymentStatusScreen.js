@@ -1,7 +1,6 @@
 export default class PaymentStatusScreen {
 
 
-
     /**
      *
      */
@@ -69,26 +68,6 @@ export default class PaymentStatusScreen {
         this._clickSubmit();
     }
 
-    /**
-     *
-     */
-    selectIDEALIssuerABA() {
-        cy.get('button[value="ideal_ABNANL2A"]').click();
-    }
-
-    /**
-     *
-     */
-    selectCBCIssuerKBC() {
-        cy.get('button[value="KBC"]').click();
-    }
-
-    /**
-     *
-     */
-    selectGiropay() {
-        cy.contains('giropay').click();
-    }
 
     /**
      *
