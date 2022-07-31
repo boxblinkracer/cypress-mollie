@@ -48,7 +48,7 @@ const molliePayment = new PaymentStatusScreen();
 it('Checkout with Credit Card', () => {
 
     // ....prepare checkout in your shop where credit card is used
-    // ....once redirect to Mollie do this (below)....
+    // ....once redirected to Mollie, do this (below)....
     
     // required for the CSRF tokens ;)
     mollieSandbox.initSandboxCookie();
