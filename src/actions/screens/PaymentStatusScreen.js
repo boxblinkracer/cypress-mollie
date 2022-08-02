@@ -8,7 +8,29 @@ export default class PaymentStatusScreen {
     getAmount() {
         return cy.get('.header__amount');
     }
-    
+
+    /**
+     * Verifies that the displayed total amount on the Mollie
+     * page matches the amount that you have provided.
+     * Use this to verify that the user has to pay
+     * the correct price in Mollie.
+     * @param amount
+     */
+    assertAmount(amount) {
+        let searchAmount = amount.toString();
+        searchAmount = searchAmount.replace(',', '');
+        searchAmount = searchAmount.replace('.', '');
+
+        this.getAmount().then(($headerAmount) => {
+
+            let finalHeaderAmount = $headerAmount.text();
+            finalHeaderAmount = finalHeaderAmount.replace(',', '');
+            finalHeaderAmount = finalHeaderAmount.replace('.', '');
+
+            expect(finalHeaderAmount).to.contain(searchAmount);
+        })
+    }
+
     /**
      *
      */

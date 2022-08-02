@@ -47,8 +47,14 @@ const molliePayment = new PaymentStatusScreen();
 
 it('Checkout with Credit Card', () => {
 
-    // ....prepare checkout in your shop where credit card is used
-    // ....once redirected to Mollie, do this (below)....
+    // ....prepare checkout in your shop where credit card is used.
+    // also remember our total amount from our confirm page
+    cy.get('.cart-total-value').then((total) => {
+        const value = total.text().trim();
+        cy.wrap(value).as('totalSum');
+    })
+        
+    // ....once redirected to Mollie, do the code below:
     
     // required for the CSRF tokens ;)
     mollieSandbox.initSandboxCookie();
@@ -61,8 +67,15 @@ it('Checkout with Credit Card', () => {
     mollieCreditCardForm.setVerificationCode('1234');
     mollieCreditCardForm.submitForm();
     
-    // now we are on the status page
-    // just select something like paid
+    // we are now on the final status page
+    // if you want, you can assert the total sum
+    // that was passed on to Mollie
+    cy.get('@totalSum').then(totalSum => {
+        mollieStatus.assertAmount(totalSum);
+    });
+
+    // now simply select a status to continue
+    // we use "paid" in our case
     mollieStatus.selectPaid();
 })
 ```
