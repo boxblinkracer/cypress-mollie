@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## [1.2.0]
+
+### Added
+
+- Added new assertion option for totalAmount on the Mollie PaymentStatusScreen
+
+
 ## [1.1.0]
 
 ### Added
