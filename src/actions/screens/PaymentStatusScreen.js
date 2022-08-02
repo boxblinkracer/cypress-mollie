@@ -1,6 +1,22 @@
 export default class PaymentStatusScreen {
 
     /**
+     * Gets the description of the started order/transaction.
+     * @returns {*}
+     */
+    getDescription() {
+        return cy.get('.header__info');
+    }
+
+    /**
+     * Gets the merchant name of the started order/transaction.
+     * @returns {*}
+     */
+    getMerchantName() {
+        return cy.get('.header__merchant-name');
+    }
+
+    /**
      * Gets the total amount that will be
      * paid with Mollie.
      * @returns {*}
