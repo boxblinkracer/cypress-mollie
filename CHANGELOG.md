@@ -2,13 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-
 ## [1.2.0]
 
 ### Added
 
-- Added new assertion option for totalAmount on the Mollie PaymentStatusScreen
-
+- Added new assertion option for totalAmount on the Mollie PaymentStatus screen
+- Added Description and Merchant Name to the PaymentStatus screen
+- Added more issuers to iDEAL and Voucher screens
+- Added in3 and Giftcards to the PaymentList screen
 
 ## [1.1.0]
 

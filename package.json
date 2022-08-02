@@ -1,6 +1,6 @@
 {
     "name": "cypress-mollie",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Prepared Mollie Actions for Cypress",
     "main": "index.js",
     "private": false,
