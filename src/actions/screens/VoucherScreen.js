@@ -4,7 +4,14 @@ export default class VoucherScreen {
      *
      */
     selectMonizze() {
-        cy.contains('Monizze Eco').click();
+        cy.contains('Monizze').click();
+    }
+
+    /**
+     *
+     */
+    selectSodexo() {
+        cy.contains('Sodexo').click();
     }
 
 }
