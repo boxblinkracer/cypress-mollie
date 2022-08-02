@@ -98,5 +98,19 @@ export default class PaymentListScreen {
         cy.contains('SEPA Direct Debit').click();
     }
 
+    /**
+     *
+     */
+    selectIn3() {
+        cy.contains('Pay in 3').click();
+    }
+
+    /**
+     *
+     */
+    selectGiftcardBeautyCadeau() {
+        cy.contains('BeautyCadeau').click();
+    }
+
 }
 
