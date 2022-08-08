@@ -17,7 +17,7 @@ export default class CreditCardScreen {
      * @param name
      */
     setCardHolder(name) {
-        cy.wait(200);
+        cy.wait(500); // there is a weird iFrame reloading...with wait it works good
         cy.get('iframe[name="cardHolder-input"]').then($element => {
             const $body = $element.contents().find('body')
             cy.wrap($body).find('#cardHolder').eq(0).click();
@@ -31,7 +31,7 @@ export default class CreditCardScreen {
      * @param number
      */
     setCardNumber(number) {
-        cy.wait(200);
+        cy.wait(500); // there is a weird iFrame reloading...with wait it works good
         cy.get('iframe[name="cardNumber-input"]').then($element => {
             const $body = $element.contents().find('body')
             cy.wrap($body).find('#cardNumber').eq(0).click();
@@ -45,7 +45,7 @@ export default class CreditCardScreen {
      * @param expiryDate
      */
     setExpiryDate(expiryDate) {
-        cy.wait(200);
+        cy.wait(500); // there is a weird iFrame reloading...with wait it works good
         cy.get('iframe[name="expiryDate-input"]').then($element => {
             const $body = $element.contents().find('body')
             cy.wrap($body).find('#expiryDate').eq(0).click();
@@ -59,7 +59,7 @@ export default class CreditCardScreen {
      * @param cvc
      */
     setVerificationCode(cvc) {
-        cy.wait(200);
+        cy.wait(500); // there is a weird iFrame reloading...with wait it works good
         cy.get('iframe[name="verificationCode-input"]').then($element => {
             const $body = $element.contents().find('body')
             cy.wrap($body).find('#verificationCode').eq(0).click();
