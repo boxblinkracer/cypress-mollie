@@ -114,6 +114,20 @@ export default class PaymentStatusScreen {
         this._clickSubmit();
     }
 
+    /**
+     * Navigates back by using the "Payment methods" link in the footer.
+     */
+    goBack() {
+        cy.get('.button--link').click();
+    }
+
+    /**
+     *
+     * @param language
+     */
+    selectLocale(language) {
+        cy.get('#select-locale').select(language);
+    }
 
     /**
      *

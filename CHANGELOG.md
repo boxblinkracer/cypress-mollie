@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0]
+
+### Added
+
+- Added option to switch languages on the Mollie PaymentStatus screen
+- Added access to "back" button on the Mollie PaymentStatus screen
+
+### Changed
+
+- Improve reliability of iFrame fields in Credit Card screen
+
 ## [1.2.0]
 
 ### Added
