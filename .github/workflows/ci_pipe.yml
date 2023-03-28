@@ -3,13 +3,13 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
 
