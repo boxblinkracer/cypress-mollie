@@ -1,5 +1,4 @@
 export default class MollieSandbox {
-
     /**
      * This function is very important.
      * Call it in the "before" or within your test, that uses
@@ -11,20 +10,13 @@ export default class MollieSandbox {
      * (token expires error will be visible).
      */
     initSandboxCookie() {
-
-        cy.setCookie(
-            'SESSIONID',
-            'cypress-dummy-value',
-            {
-                domain: '.www.mollie.com',
-                sameSite: 'None',
-                secure: true,
-                httpOnly: true,
-            }
-        );
+        cy.setCookie('SESSIONID', 'cypress-dummy-value', {
+            domain: '.www.mollie.com',
+            sameSite: 'None',
+            secure: true,
+            httpOnly: true,
+        });
 
         cy.reload();
     }
-
 }
-

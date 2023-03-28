@@ -1,7 +1,6 @@
 import PaymentStatusScreen from '../screens/PaymentStatusScreen';
 
 export default class PaymentStatusScreenAssertion {
-
     /**
      *
      */
@@ -17,19 +16,16 @@ export default class PaymentStatusScreenAssertion {
      * @param amount
      */
     assertAmount(amount) {
-
         let searchAmount = amount.toString();
         searchAmount = searchAmount.replace(',', '');
         searchAmount = searchAmount.replace('.', '');
 
         this.repoScreen.getAmount().then(($headerAmount) => {
-
             let finalHeaderAmount = $headerAmount.text();
             finalHeaderAmount = finalHeaderAmount.replace(',', '');
             finalHeaderAmount = finalHeaderAmount.replace('.', '');
 
             expect(finalHeaderAmount).to.contain(searchAmount);
-        })
+        });
     }
-
 }

@@ -1,5 +1,4 @@
 export default class PaymentStatusScreen {
-
     /**
      * Gets the description of the started order/transaction.
      * @returns {*}
@@ -41,13 +40,12 @@ export default class PaymentStatusScreen {
         searchAmount = searchAmount.replace('.', '');
 
         this.getAmount().then(($headerAmount) => {
-
             let finalHeaderAmount = $headerAmount.text();
             finalHeaderAmount = finalHeaderAmount.replace(',', '');
             finalHeaderAmount = finalHeaderAmount.replace('.', '');
 
             expect(finalHeaderAmount).to.contain(searchAmount);
-        })
+        });
     }
 
     /**
@@ -81,7 +79,6 @@ export default class PaymentStatusScreen {
      *
      */
     selectAuthorized() {
-
         cy.get('input[value="authorized"]').click();
 
         this._clickSubmit();
@@ -91,7 +88,6 @@ export default class PaymentStatusScreen {
      *
      */
     selectFailed() {
-
         cy.get('input[value="failed"]').click();
 
         this._clickSubmit();
@@ -101,7 +97,6 @@ export default class PaymentStatusScreen {
      *
      */
     selectCancelled() {
-
         cy.get('input[value="canceled"]').click();
 
         this._clickSubmit();
@@ -111,7 +106,6 @@ export default class PaymentStatusScreen {
      *
      */
     selectExpired() {
-
         cy.get('input[value="expired"]').click();
 
         this._clickSubmit();
@@ -139,5 +133,4 @@ export default class PaymentStatusScreen {
     _clickSubmit() {
         cy.get('.button').click();
     }
-
 }

@@ -1,5 +1,4 @@
 export default class VoucherScreen {
-
     /**
      *
      */
@@ -13,6 +12,4 @@ export default class VoucherScreen {
     selectSodexo() {
         cy.contains('Sodexo').click();
     }
-
 }
-

@@ -1,5 +1,4 @@
 export default class CreditCardComponentsAssertion {
-
     /**
      *
      * @param {boolean} expectedValid
@@ -43,7 +42,6 @@ export default class CreditCardComponentsAssertion {
         this._assertField('verificationCode', expectedValid);
     }
 
-
     /**
      *
      * @param fieldName
@@ -62,5 +60,4 @@ export default class CreditCardComponentsAssertion {
             cy.get(fieldId).should('have.class', classInvalid);
         }
     }
-
 }

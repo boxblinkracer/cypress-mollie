@@ -1,5 +1,4 @@
 export default class IDealScreen {
-
     /**
      * Select the provided issuer by its ID name.
      * This is something like "ideal_xxx"...
@@ -99,5 +98,4 @@ export default class IDealScreen {
     selectVanLanschot() {
         cy.get('button[value="ideal_FVLBNL22"]').click();
     }
-
 }

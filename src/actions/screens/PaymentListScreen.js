@@ -1,5 +1,4 @@
 export default class PaymentListScreen {
-
     /**
      *
      */
@@ -111,6 +110,4 @@ export default class PaymentListScreen {
     selectGiftcardBeautyCadeau() {
         cy.contains('BeautyCadeau').click();
     }
-
 }
-

@@ -1,5 +1,4 @@
 export default class KBCScreen {
-
     /**
      *
      */
@@ -13,5 +12,4 @@ export default class KBCScreen {
     selectCBC() {
         cy.get('button[value="cbc"]').click();
     }
-
 }
