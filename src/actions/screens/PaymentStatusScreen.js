@@ -30,7 +30,10 @@ export default class PaymentStatusScreen {
      * page matches the amount that you have provided.
      * Use this to verify that the user has to pay
      * the correct price in Mollie.
+     *
      * @param amount
+     *
+     * @deprecated will be removed one day. please use the dedicated Assertion class PaymentStatusScreenAssertion.js in the future
      */
     assertAmount(amount) {
         let searchAmount = amount.toString();

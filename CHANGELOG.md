@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Added
+
+- Add new assertion options for the credit card components iFrames.
+
+### Changed
+
+- Added new assertion classes to separate assertions from pure navigation actions within screens.
+
 ## [1.3.0]
 
 ### Added
