@@ -16,5 +16,11 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/boxblinkracer/cypress-mollie.git"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.18.2",
+        "@babel/preset-env": "^7.18.2",
+        "eslint": "^8.18.0",
+        "prettier": "2.7.1"
     }
 }

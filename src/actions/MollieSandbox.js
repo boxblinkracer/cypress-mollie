@@ -1,5 +1,5 @@
 export default class MollieSandbox {
-    
+
     /**
      * This function is very important.
      * Call it in the "before" or within your test, that uses
@@ -14,12 +14,12 @@ export default class MollieSandbox {
 
         cy.setCookie(
             'SESSIONID',
-            "cypress-dummy-value",
+            'cypress-dummy-value',
             {
                 domain: '.www.mollie.com',
                 sameSite: 'None',
                 secure: true,
-                httpOnly: true
+                httpOnly: true,
             }
         );
 
